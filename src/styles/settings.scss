@@ -260,7 +260,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-bg: $white !default;
-$body-color: $gray-900 !default;
+$body-color: $black !default;
 $body-text-align: null !default;
 
 // Links
@@ -398,13 +398,13 @@ $font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetic
   'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
 // stylelint-enable value-keyword-case
-$font-family-base: var(--#{$variable-prefix}font-sans-serif) !default;
+$font-family-base: 'Manrope', $font-family-sans-serif;
 $font-family-code: var(--#{$variable-prefix}font-monospace) !default;
 
 // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
 // $font-size-base effects the font size of the body text
-$font-size-root: null !default;
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-root: 10px !default;
+$font-size-base: 1.4rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 
@@ -416,7 +416,7 @@ $font-weight-bolder: bolder !default;
 
 $font-weight-base: $font-weight-normal !default;
 
-$line-height-base: 1.5 !default;
+$line-height-base: 1.857;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
