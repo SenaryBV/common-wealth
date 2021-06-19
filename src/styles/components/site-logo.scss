@@ -1,0 +1,19 @@
+.site-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+
+    svg {
+        color: $green;
+    }
+
+    &__name {
+        font-weight: 600;
+        margin-left: 12px;
+    }
+
+    &:hover {
+        color: inherit;
+    }
+}

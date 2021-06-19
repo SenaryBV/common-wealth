@@ -27,6 +27,7 @@
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-responsive": "^8.2.0",
     "sass": "^1.32.8"
   },
   "devDependencies": {
@@ -43,7 +44,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop -o -H $HOSTNAME -p 3000",
+    "develop": "gatsby develop -o -H localhost -p 3000",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

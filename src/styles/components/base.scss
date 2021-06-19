@@ -4,6 +4,7 @@ body {
 }
 
 body {
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -48,14 +49,6 @@ svg {
   display: block;
 }
 
-.container {
-  @extend .container-fluid;
-  max-width: 1240px;
-  &-fluid {
-    margin: auto;
-    padding: 0 40px;
-    @include media-breakpoint-down(sm) {
-      padding: 0 20px;
-    }
-  }
+.main {
+  padding-top: 90px;
 }

@@ -43,7 +43,7 @@ $pink: #d63384 !default;
 $red: #dc3545 !default;
 $orange: #fd7e14 !default;
 $yellow: #ffc107 !default;
-$green: #198754 !default;
+$green: #82b97e !default;
 $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
 // scss-docs-end color-variables
@@ -56,7 +56,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: $blue !default;
+$primary: $green;
 $secondary: $gray-600 !default;
 $success: $green !default;
 $info: $cyan !default;
@@ -267,11 +267,11 @@ $body-text-align: null !default;
 //
 // Style anchor elements.
 
-$link-color: $primary !default;
-$link-decoration: underline !default;
+$link-color: $black;
+$link-decoration: none;
 $link-shade-percentage: 20% !default;
-$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
-$link-hover-decoration: null !default;
+$link-hover-color: $green;
+$link-hover-decoration: none;
 
 $stretched-link-pseudo-element: after !default;
 $stretched-link-z-index: 1 !default;
@@ -587,16 +587,16 @@ $input-btn-border-width: $border-width !default;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 // scss-docs-start btn-variables
-$btn-padding-y: $input-btn-padding-y !default;
-$btn-padding-x: $input-btn-padding-x !default;
+$btn-padding-y: 18px;
+$btn-padding-x: 36px;
 $btn-font-family: $input-btn-font-family !default;
-$btn-font-size: $input-btn-font-size !default;
-$btn-line-height: $input-btn-line-height !default;
-$btn-white-space: null !default; // Set to `nowrap` to prevent text wrapping
+$btn-font-size: 1.6rem;
+$btn-line-height: 1;
+$btn-white-space: nowrap; // Set to `nowrap` to prevent text wrapping
 
-$btn-padding-y-sm: $input-btn-padding-y-sm !default;
-$btn-padding-x-sm: $input-btn-padding-x-sm !default;
-$btn-font-size-sm: $input-btn-font-size-sm !default;
+$btn-padding-y-sm: 12px;
+$btn-padding-x-sm: 29px;
+$btn-font-size-sm: 1.6rem;
 
 $btn-padding-y-lg: $input-btn-padding-y-lg !default;
 $btn-padding-x-lg: $input-btn-padding-x-lg !default;
@@ -604,7 +604,7 @@ $btn-font-size-lg: $input-btn-font-size-lg !default;
 
 $btn-border-width: $input-btn-border-width !default;
 
-$btn-font-weight: $font-weight-normal !default;
+$btn-font-weight: 600;
 $btn-box-shadow: inset 0 1px 0 rgba($white, 0.15), 0 1px 1px rgba($black, 0.075) !default;
 $btn-focus-width: $input-btn-focus-width !default;
 $btn-focus-box-shadow: $input-btn-focus-box-shadow !default;
@@ -616,8 +616,8 @@ $btn-link-hover-color: $link-hover-color !default;
 $btn-link-disabled-color: $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius: $border-radius !default;
-$btn-border-radius-sm: $border-radius-sm !default;
+$btn-border-radius: 16px;
+$btn-border-radius-sm: 16px;
 $btn-border-radius-lg: $border-radius-lg !default;
 
 $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,

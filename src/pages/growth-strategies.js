@@ -6,15 +6,14 @@ import SEO from '../components/seo'
 
 import { Container } from 'react-bootstrap'
 
-const SecondPage = () => (
+const GrowthStrategies = () => (
   <Layout>
     <Container>
-      <SEO title="Page two" />
-      <h1>Hi from the second page</h1>
-      <p>Welcome to page 2</p>
+      <SEO title="Growth Strategies'" />
+      <h1>Growth Strategies</h1>
       <Link to="/">Go back to the homepage</Link>
     </Container>
   </Layout>
 )
 
-export default SecondPage
+export default GrowthStrategies

@@ -1,0 +1,22 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    @include media-breakpoint-down(lg) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        max-width: 760px;
+    }
+
+    @include media-breakpoint-only(lg) {
+        width: 960px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 1120px;
+    }
+}
