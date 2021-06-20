@@ -9,7 +9,7 @@ import { FOOTER_NAV, FOOTER_COPY } from '../Nav/constants'
 import { SOCIAL_LINKS } from '../SocialLinks/constants'
 
 const Footer = ({ siteTitle }) => {
-  const { isDesktop, isTabletOrMobile, isMobile } = MediaQueries()
+  const { isMobile } = MediaQueries()
 
   return (
     <Container as="footer" className="footer">

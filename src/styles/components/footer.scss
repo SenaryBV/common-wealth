@@ -12,6 +12,10 @@
             border-bottom: 1px solid $gray-100;
             margin-bottom: 24px;
         }
+
+        .site-nav--header .site-nav__link {
+            border: none;
+        }
     }
 
     &__copy {
