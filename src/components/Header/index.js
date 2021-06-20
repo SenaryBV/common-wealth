@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => {
   return (
     <Container as="header" className="header">
       <Logo title={siteTitle} />
-      {isDesktop && <Nav nav={HEADER_NAV} modifier="header" />}
+      {isDesktop && <Nav nav={HEADER_NAV} id="header" modifier="header" />}
       <div className="header__left">
         {!isMobile && <MemberPortal />}
         {isTabletOrMobile && (
@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => {
             </button>
             {open && (
               <MobileMenu>
-                <Nav nav={HEADER_NAV} modifier="mobile" />
+                <Nav nav={HEADER_NAV} modifier="mobile" id="mobile" />
                 {isMobile && <MemberPortal />}
               </MobileMenu>
             )}

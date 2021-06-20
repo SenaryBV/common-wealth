@@ -15,11 +15,11 @@ const Footer = ({ siteTitle }) => {
     <Container as="footer" className="footer">
       <div className="footer__section footer__section--top">
         <Logo title={siteTitle} />
-        {!isMobile && <Nav nav={FOOTER_NAV} modifier="header" />}
+        {!isMobile && <Nav nav={FOOTER_NAV} modifier="header" id="footer" />}
         <MemberPortal />
       </div>
       <div className="footer__section footer__section--bottom">
-        <Nav nav={FOOTER_COPY} modifier="footer" />
+        <Nav nav={FOOTER_COPY} modifier="footer" id="footer-copy" />
         <SocialLinks links={SOCIAL_LINKS} />
         <div className="footer__copy">© 2021 {siteTitle}. All Rights Reserved</div>
       </div>
