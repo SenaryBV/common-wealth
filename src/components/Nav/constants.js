@@ -47,10 +47,10 @@ export const FOOTER_NAV = [
 export const FOOTER_COPY = [
   {
     name: 'Privacy Policy',
-    link: '/privacy/',
+    link: '/',
   },
   {
     name: 'Terms of Use',
-    link: '/Terms/',
+    link: '/',
   },
 ]

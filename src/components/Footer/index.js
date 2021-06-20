@@ -5,6 +5,8 @@ import Nav from '../Nav'
 import MemberPortal from '../MemberPortal'
 import SocialLinks from '../SocialLinks'
 import MediaQueries from '../MediaQueries'
+
+// constants
 import { FOOTER_NAV, FOOTER_COPY } from '../Nav/constants'
 import { SOCIAL_LINKS } from '../SocialLinks/constants'
 

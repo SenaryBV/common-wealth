@@ -23,14 +23,14 @@ export const HERO_HOMEPAGE = {
     {
       name: 'Invest with us',
       attrs: {
-        to: '/invest-with-us/',
+        to: '/',
         className: 'btn btn-primary',
       },
     },
     {
       name: 'Apply for funding',
       attrs: {
-        to: '/apply-for-funding/',
+        to: '/',
         className: 'btn btn-outline-primary',
       },
     },

@@ -6,6 +6,8 @@ import Icon from '../Icon'
 import MobileMenu from '../MobileMenu'
 import MemberPortal from '../MemberPortal'
 import MediaQueries from '../MediaQueries'
+
+// constants
 import { HEADER_NAV } from '../Nav/constants'
 
 const Header = ({ siteTitle }) => {
