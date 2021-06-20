@@ -3,7 +3,7 @@ module.exports = {
     DEV_SSR: true,
   },
   siteMetadata: {
-    title: `SiteName`,
+    title: 'Commonwealth',
     description: `Description`,
     domain: '*.min.studio',
   },

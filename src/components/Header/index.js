@@ -8,13 +8,13 @@ import MemberPortal from '../MemberPortal'
 import MediaQueries from '../MediaQueries'
 import { HEADER_NAV } from '../Nav/constants'
 
-const Header = () => {
+const Header = ({ siteTitle }) => {
   const { isDesktop, isTabletOrMobile, isMobile } = MediaQueries()
   const [open, setOpen] = useState(false)
 
   return (
     <Container as="header" className="header">
-      <Logo />
+      <Logo title={siteTitle} />
       {isDesktop && <Nav nav={HEADER_NAV} modifier="header" />}
       <div className="header__left">
         {!isMobile && <MemberPortal />}

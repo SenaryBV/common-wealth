@@ -5,9 +5,13 @@
     display: flex;
     align-items: center;
 
+    &__link {
+        white-space: nowrap;
+    }
+
     &--header & {
-        &__item {
-            margin: 0 18px;
+        &__item:not(:last-child) {
+            margin-right: 36px;
         }
 
         &__link {
@@ -61,6 +65,20 @@
 
             &.is-active {
                 border-color: $green;
+            }
+        }
+    }
+
+    &--footer & {
+        &__item:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        &__link {
+            color: $gray-900;
+
+            &:hover {
+                color: green;
             }
         }
     }

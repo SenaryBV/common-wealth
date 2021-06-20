@@ -1,12 +1,16 @@
-const SOCIAL_LINKS = [
+export const SOCIAL_LINKS = [
   {
-    icon: 'twitter',
-    link: '#',
+    href: '#',
+    icon: {
+      name: 'twitter',
+      size: [20, 17],
+    },
   },
   {
-    icon: 'discord',
-    link: '#',
+    href: '#',
+    icon: {
+      name: 'discord',
+      size: [20, 23],
+    },
   },
 ]
-
-export default SOCIAL_LINKS
