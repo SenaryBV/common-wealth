@@ -51,17 +51,20 @@
 // @import "~bootstrap/scss/images";
 
 // Components
+@import 'components/typography';
 @import 'components/base';
 @import 'components/button';
 @import 'components/container';
 @import 'components/fonts';
 @import 'components/footer';
 @import 'components/header';
+@import 'components/hero-stat';
+@import 'components/hero';
 @import 'components/mobile-menu';
 @import 'components/site-logo';
 @import 'components/site-nav';
 @import 'components/social-links';
-@import 'components/typography';
+
 // @import 'components/dropdown';
 // @import 'components/table';
 // @import 'components/badge';

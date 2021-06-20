@@ -13,26 +13,28 @@ const Header = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
 
   return (
-    <Container as="header" className="header">
-      <Logo title={siteTitle} />
-      {isDesktop && <Nav nav={HEADER_NAV} modifier="header" />}
-      <div className="header__left">
-        {!isMobile && <MemberPortal />}
-        {isTabletOrMobile && (
-          <>
-            <button onClick={() => setOpen(!open)} className="btn-menu-toggler">
-              <Icon name={open ? 'close' : 'menu'} size={open ? [22, 22] : [32, 32]} />
-            </button>
-            {open && (
-              <MobileMenu>
-                <Nav nav={HEADER_NAV} modifier="mobile" />
-                {isMobile && <MemberPortal />}
-              </MobileMenu>
-            )}
-          </>
-        )}
-      </div>
-    </Container>
+    <header class="header">
+      <Container className="header__inner">
+        <Logo title={siteTitle} />
+        {isDesktop && <Nav nav={HEADER_NAV} modifier="header" />}
+        <div className="header__left">
+          {!isMobile && <MemberPortal />}
+          {isTabletOrMobile && (
+            <>
+              <button onClick={() => setOpen(!open)} className="btn-menu-toggler">
+                <Icon name={open ? 'close' : 'menu'} size={open ? [22, 22] : [32, 32]} />
+              </button>
+              {open && (
+                <MobileMenu>
+                  <Nav nav={HEADER_NAV} modifier="mobile" />
+                  {isMobile && <MemberPortal />}
+                </MobileMenu>
+              )}
+            </>
+          )}
+        </div>
+      </Container>
+    </header>
   )
 }
 
