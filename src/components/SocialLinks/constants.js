@@ -1,13 +1,13 @@
 export const SOCIAL_LINKS = [
   {
-    href: '#',
+    href: 'https://twitter.com/',
     icon: {
       name: 'twitter',
       size: [20, 17],
     },
   },
   {
-    href: '#',
+    href: 'https://discord.com/',
     icon: {
       name: 'discord',
       size: [20, 23],
