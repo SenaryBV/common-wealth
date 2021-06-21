@@ -3,7 +3,9 @@
     padding-bottom: 40px;
 
     @include media-breakpoint-up(sm) {
-        padding-top: 75px;
-        padding-bottom: 75px;
+        &:not([class*='site-section--sm']) {
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
     }
 }

@@ -1,0 +1,107 @@
+$icon-size-8: 86px;
+$icon-size-4: 160px;
+
+.icon-grid {
+    text-align: center;
+
+    &__title {
+        font-size: 22px;
+        letter-spacing: 0.3px;
+        margin: 0;
+    }
+
+    &__container {
+        display: grid;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    @include media-breakpoint-up(sm) {
+        &__title {
+            display: inline-block;
+            transform: translateY(50%);
+            padding: 9px 29px;
+            background: $white;
+        }
+
+        &__container {
+            border: 1px solid #b2dfc1;
+            border-radius: 20px;
+        }
+    }
+
+    &--8-max & {
+        &__container {
+            grid-template-columns: repeat(auto-fill, $icon-size-8);
+        }
+
+        @include media-breakpoint-down(sm) {
+            &__container {
+                grid-gap: 20px 35px;
+            }
+
+            &__item {
+                margin: auto;
+            }
+
+            &__title {
+                font-size: 24px;
+                margin-bottom: 40px;
+            }
+        }
+
+        @include media-breakpoint-only(sm) {
+            &__container {
+                grid-gap: 30px;
+                padding: 35px 30px 30px;
+            }
+        }
+
+        @include media-breakpoint-only(md) {
+            &__container {
+                grid-gap: 40px 80px;
+                padding: 50px 60px 40px;
+            }
+        }
+
+        @include media-breakpoint-only(lg) {
+            &__container {
+                padding: 55px 40px;
+                grid-gap: 25px;
+            }
+        }
+
+        @include media-breakpoint-up(xl) {
+            &__container {
+                padding: 55px 60px;
+                grid-gap: 40px;
+            }
+        }
+    }
+
+    &--4-max & {
+        &__container {
+            grid-template-columns: repeat(auto-fill, $icon-size-4);
+        }
+
+        @include media-breakpoint-up(lg) {
+            &__container {
+                grid-gap: 75px;
+            }
+        }
+
+        @include media-breakpoint-only(lg) {
+            &__container {
+                padding: 36px 43px;
+            }
+        }
+
+        @include media-breakpoint-up(xl) {
+            &__container {
+                padding: 40px 115px;
+            }
+        }
+    }
+}

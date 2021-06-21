@@ -1,7 +1,7 @@
 import React from 'react'
 import CtaCard from '.'
 
-export const CtaCardWrapper = ({ ctaCards }) => {
+const CtaCardWrapper = ({ ctaCards }) => {
   return (
     <div className="cta-card-wrapper">
       {ctaCards.map((props) => (
