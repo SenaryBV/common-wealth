@@ -8,20 +8,25 @@ import { Container } from 'react-bootstrap'
 import Hero from '../components/Hero'
 import InfoBox from '../components/InfoBox'
 import SiteSection from '../components/SiteSection'
+import SectionHeader from '../components/SectionHeader'
 
 // constants
 import { HERO_HOMEPAGE } from '../components/Hero/constants'
-import { HOMEPAGE_SOFTWARE, HOMEPAGE_HOW_IT_WORKS } from '../components/InfoBox/constants'
+import { IB_SOFTWARE, IB_HOW_IT_WORKS } from '../components/InfoBox/constants'
+import { SH_GROWTH_STRATEGIES } from '../components/SectionHeader/constants'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero {...HERO_HOMEPAGE} />
     <SiteSection>
-      <InfoBox {...HOMEPAGE_SOFTWARE} />
+      <InfoBox {...IB_SOFTWARE} />
     </SiteSection>
     <SiteSection>
-      <InfoBox {...HOMEPAGE_HOW_IT_WORKS} />
+      <SectionHeader {...SH_GROWTH_STRATEGIES} />
+    </SiteSection>
+    <SiteSection>
+      <InfoBox {...IB_HOW_IT_WORKS} />
     </SiteSection>
   </Layout>
 )

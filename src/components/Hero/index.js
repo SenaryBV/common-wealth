@@ -19,7 +19,9 @@ const Hero = ({ modifier, title, descr, stats, cta }) => {
         {cta && (
           <div className="hero__cta">
             {cta.map(({ name, attrs }) => (
-              <Link {...attrs}>{name}</Link>
+              <Link key={name} {...attrs}>
+                {name}
+              </Link>
             ))}
           </div>
         )}

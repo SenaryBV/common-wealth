@@ -1,4 +1,4 @@
-export const HOMEPAGE_SOFTWARE = {
+export const IB_SOFTWARE = {
   modifier: null,
   title: 'Software is a Liquid Asset',
   descr:
@@ -14,7 +14,7 @@ export const HOMEPAGE_SOFTWARE = {
   ],
 }
 
-export const HOMEPAGE_HOW_IT_WORKS = {
+export const IB_HOW_IT_WORKS = {
   modifier: 'reverse',
   title: 'How it works',
   descr:

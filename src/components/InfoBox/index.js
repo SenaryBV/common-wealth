@@ -11,7 +11,9 @@ const InfoBox = ({ modifier, title, descr, cta, img }) => {
         {cta && (
           <div className="info-box__cta">
             {cta.map(({ name, attrs }) => (
-              <Link {...attrs}>{name}</Link>
+              <Link key={name} {...attrs}>
+                {name}
+              </Link>
             ))}
           </div>
         )}

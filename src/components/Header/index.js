@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
 
   return (
-    <header class="header">
+    <header className="header">
       <Container className="header__inner">
         <Logo title={siteTitle} />
         {isDesktop && <Nav nav={HEADER_NAV} modifier="header" />}
