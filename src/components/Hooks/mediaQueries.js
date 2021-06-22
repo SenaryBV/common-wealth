@@ -1,8 +1,8 @@
 import { useMediaQuery } from 'react-responsive'
 
-const desktopBreakpoint = 1024
-const tabletBreakpoint = 1023
-const mobileBreakpoint = 576
+export const desktopBreakpoint = 1024
+export const tabletBreakpoint = 1023
+export const mobileBreakpoint = 576
 
 export const useMediaQueries = () => {
   const isDesktop = useMediaQuery({ query: `(min-width: ${desktopBreakpoint}px)` })
