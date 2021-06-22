@@ -13,6 +13,20 @@
         margin-bottom: 0;
     }
 
-    &__items {
+    @include media-breakpoint-between(sm, lg) {
+        &__slider {
+            display: flex;
+            grid-gap: 0;
+            overflow-x: auto;
+
+            .news-card {
+                width: 300px;
+                flex-shrink: 0;
+
+                + .news-card {
+                    margin-left: 40px;
+                }
+            }
+        }
     }
 }

@@ -1,4 +1,3 @@
-import { tabletBreakpoint } from '../Hooks/mediaQueries'
 import { NEWS_DATA } from '../NewsCard/constants'
 
 export const NEWS_SLIDER = {
@@ -11,6 +10,5 @@ export const NEWS_SLIDER = {
     },
   },
   visibleCount: 3,
-  sliderBreakpoint: tabletBreakpoint,
   data: NEWS_DATA,
 }

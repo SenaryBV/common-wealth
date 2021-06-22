@@ -25,7 +25,7 @@ import { NEWS_SLIDER } from '../components/NewsSlider/constants'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    {/* <SiteSection modifier="bg-hp">
+    <SiteSection modifier="bg-hp">
       <Hero {...HERO_HOMEPAGE} />
     </SiteSection>
     <SiteSection>
@@ -40,13 +40,13 @@ const IndexPage = () => (
     </SiteSection>
     <SiteSection>
       <MemberInfoWrapper {...PC_MEMBERS_INFO} members={PC_MEMBERS_HOMEPAGE} />
-    </SiteSection> */}
+    </SiteSection>
     <SiteSection>
       <NewsSlider {...NEWS_SLIDER} />
     </SiteSection>
-    {/* <SiteSection>
+    <SiteSection>
       <InfoBox {...IB_HOW_IT_WORKS} />
-    </SiteSection> */}
+    </SiteSection>
   </Layout>
 )
 

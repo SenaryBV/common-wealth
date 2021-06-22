@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from '@reach/router'
 import NewsCard from '../NewsCard'
 
-const NewsSlider = ({ title, cta, visibleCount, sliderBreakpoint, data }) => {
+const NewsSlider = ({ title, cta, visibleCount, data }) => {
   const { attr, name } = cta
+  const slicedData = data.length > visibleCount ? data.slice(0, visibleCount) : data
 
   return (
     <div className="news-slider">
@@ -13,8 +14,8 @@ const NewsSlider = ({ title, cta, visibleCount, sliderBreakpoint, data }) => {
           <Link {...attr}>{name}</Link>
         </div>
       </div>
-      <div className="news-slider__items news-grid">
-        {data.map((props) => (
+      <div className="news-slider__slider news-grid">
+        {slicedData.map((props) => (
           <NewsCard key={props.id} {...props} />
         ))}
       </div>

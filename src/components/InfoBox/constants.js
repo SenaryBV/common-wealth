@@ -7,7 +7,7 @@ export const IB_SOFTWARE = {
     {
       name: 'Invest',
       attrs: {
-        to: '/',
+        to: '/investment-disiplines/',
         className: 'btn btn-primary',
       },
     },
@@ -23,7 +23,7 @@ export const IB_HOW_IT_WORKS = {
     {
       name: 'Learn more',
       attrs: {
-        to: '/',
+        to: '/how-it-works/',
         className: 'btn btn-primary',
       },
     },
