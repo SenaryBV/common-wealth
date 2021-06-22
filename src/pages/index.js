@@ -4,20 +4,21 @@ import * as React from 'react'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
-import { Container } from 'react-bootstrap'
 import Hero from '../components/Hero'
 import InfoBox from '../components/InfoBox'
 import SiteSection from '../components/SiteSection'
 import SectionHeader from '../components/SectionHeader'
 import CtaCardWrapper from '../components/CtaCard/wrapper'
 import IconGrid from '../components/IconGrid'
+import MemberInfoWrapper from '../components/MemberCard/infoWrapper'
 
 // constants
 import { HERO_HOMEPAGE } from '../components/Hero/constants'
 import { IB_SOFTWARE, IB_HOW_IT_WORKS } from '../components/InfoBox/constants'
 import { SH_GROWTH_STRATEGIES } from '../components/SectionHeader/constants'
 import { CC_HOMEPAGE } from '../components/CtaCard/constants'
-import { IG_INVESTMENTS, IG_OUR_PARTNERS } from '../components/IconGrid/constants'
+import { IG_INVESTMENTS } from '../components/IconGrid/constants'
+import { PC_MEMBERS_INFO, PC_MEMBERS_HOMEPAGE } from '../components/MemberCard/constants'
 
 const IndexPage = () => (
   <Layout>
@@ -35,6 +36,9 @@ const IndexPage = () => (
     </SiteSection>
     <SiteSection>
       <InfoBox {...IB_HOW_IT_WORKS} />
+    </SiteSection>
+    <SiteSection>
+      <MemberInfoWrapper {...PC_MEMBERS_INFO} members={PC_MEMBERS_HOMEPAGE} />
     </SiteSection>
   </Layout>
 )

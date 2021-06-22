@@ -5,7 +5,7 @@ import { Link } from '@reach/router'
 
 const Hero = ({ modifier, title, descr, stats, cta }) => {
   return (
-    <div className={classNames('hero', modifier && `hero--${modifier}`)}>
+    <section className={classNames('site-section hero', modifier && `hero--${modifier}`)}>
       <div className="hero__inner container">
         <h1 className="hero__title h1">{title}</h1>
         <p className="hero__descr">{descr}</p>
@@ -26,7 +26,7 @@ const Hero = ({ modifier, title, descr, stats, cta }) => {
           </div>
         )}
       </div>
-    </div>
+    </section>
   )
 }
 

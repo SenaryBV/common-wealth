@@ -7,7 +7,7 @@ const IconGrid = ({ modifier, title, icons }) => {
       <h3 className="icon-grid__title">{title}</h3>
       <ul className="icon-grid__container">
         {icons.map(({ url, alt }) => (
-          <li key={url} className="icon-grid__item">
+          <li key={alt} className="icon-grid__item">
             <img className="icon-grid__img" src={url} alt={alt} />
           </li>
         ))}

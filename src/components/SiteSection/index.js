@@ -3,9 +3,9 @@ import classNames from 'classnames'
 
 const SiteSection = ({ modifier, children }) => {
   return (
-    <div className={classNames('site-section', modifier && `site-section--${modifier}`)}>
+    <section className={classNames('site-section', modifier && `site-section--${modifier}`)}>
       <div className="container">{children}</div>
-    </div>
+    </section>
   )
 }
 
