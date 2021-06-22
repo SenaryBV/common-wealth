@@ -23,7 +23,9 @@ import { PC_MEMBERS_INFO, PC_MEMBERS_HOMEPAGE } from '../components/MemberCard/c
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero {...HERO_HOMEPAGE} />
+    <SiteSection modifier="bg-hp">
+      <Hero {...HERO_HOMEPAGE} />
+    </SiteSection>
     <SiteSection>
       <InfoBox {...IB_SOFTWARE} />
     </SiteSection>
@@ -35,10 +37,10 @@ const IndexPage = () => (
       <IconGrid {...IG_INVESTMENTS} />
     </SiteSection>
     <SiteSection>
-      <InfoBox {...IB_HOW_IT_WORKS} />
+      <MemberInfoWrapper {...PC_MEMBERS_INFO} members={PC_MEMBERS_HOMEPAGE} />
     </SiteSection>
     <SiteSection>
-      <MemberInfoWrapper {...PC_MEMBERS_INFO} members={PC_MEMBERS_HOMEPAGE} />
+      <InfoBox {...IB_HOW_IT_WORKS} />
     </SiteSection>
   </Layout>
 )

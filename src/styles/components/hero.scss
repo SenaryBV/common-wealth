@@ -1,14 +1,9 @@
 .hero {
-    min-height: 668px;
-    background-repeat: no-repeat;
-
-    &__inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: $gray-900;
-        align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $gray-900;
+    align-items: center;
 
     &__title {
         text-align: center;
@@ -86,18 +81,6 @@
                     margin-top: 24px;
                 }
             }
-        }
-    }
-
-    &--hp {
-        @include media-breakpoint-up(md) {
-            background-image: url('../assets/img/hero-hp.png');
-            background-position: center bottom;
-            background-size: contain;
-        }
-
-        @include media-breakpoint-up(xl) {
-            background-size: 100% 100%;
         }
     }
 }
