@@ -8,14 +8,36 @@
     overflow: auto;
     display: flex;
 
-    .container {
+    &__inner {
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        justify-content: center;
+    }
+
+    &__section {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        padding-top: 220px;
+    }
 
-        @include media-breakpoint-down(md) {
-            padding-top: 44px;
+    @include media-breakpoint-up(md) {
+        &__inner {
+            padding-bottom: 80px;
         }
     }
+}
+
+.mobile-menu-opened {
+    overflow: hidden;
+}
+
+.mobile-menu-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-left: 30px;
 }

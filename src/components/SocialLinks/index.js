@@ -1,13 +1,10 @@
 import React from 'react'
-import Icon from '../Icon'
 
 const SocialLinks = ({ links }) => {
   return (
     <div className="social-links">
-      {links.map(({ href, icon }) => (
-        <a className="social-links__link" key={href} target="_blank" href={href}>
-          <Icon {...icon} />
-        </a>
+      {links.map(({ id, url }) => (
+        <a className={`social-links__${id}`} key={id} title={id} target="_blank" href={url}></a>
       ))}
     </div>
   )

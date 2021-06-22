@@ -4,7 +4,7 @@ const desktopBreakpoint = 1024
 const tabletBreakpoint = 1023
 const mobileBreakpoint = 576
 
-const MediaQueries = () => {
+export const useMediaQueries = () => {
   const isDesktop = useMediaQuery({ query: `(min-width: ${desktopBreakpoint}px)` })
   const isTabletOrMobile = useMediaQuery({ query: `(max-width: ${tabletBreakpoint}px)` })
   const isMobile = useMediaQuery({ query: `(max-width: ${mobileBreakpoint}px)` })
@@ -15,5 +15,3 @@ const MediaQueries = () => {
     isMobile,
   }
 }
-
-export default MediaQueries

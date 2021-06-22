@@ -31,8 +31,8 @@
     }
 
     &--mobile & {
-        &__item:not(:last-child) {
-            margin-bottom: 50px;
+        &__item {
+            margin-bottom: 4.75vh;
         }
 
         &__link {
@@ -46,10 +46,6 @@
         @include media-breakpoint-down(md) {
             &__link {
                 font-size: 22px;
-            }
-
-            &__item:not(:last-child) {
-                margin-bottom: 35px;
             }
         }
     }

@@ -1,20 +1,19 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
 import Logo from '../Logo'
 import Nav from '../Nav'
 import MemberPortal from '../MemberPortal'
 import SocialLinks from '../SocialLinks'
-import MediaQueries from '../MediaQueries'
+import { useMediaQueries } from '../Hooks'
 
 // constants
 import { FOOTER_NAV, FOOTER_COPY } from '../Nav/constants'
 import { SOCIAL_LINKS } from '../SocialLinks/constants'
 
 const Footer = ({ siteTitle }) => {
-  const { isMobile } = MediaQueries()
+  const { isMobile } = useMediaQueries()
 
   return (
-    <Container as="footer" className="footer">
+    <footer className="footer container">
       <div className="footer__section footer__section--top">
         <Logo title={siteTitle} />
         {!isMobile && <Nav nav={FOOTER_NAV} modifier="header" />}
@@ -25,7 +24,7 @@ const Footer = ({ siteTitle }) => {
         <SocialLinks links={SOCIAL_LINKS} />
         <div className="footer__copy">© 2021 {siteTitle}. All Rights Reserved</div>
       </div>
-    </Container>
+    </footer>
   )
 }
 
