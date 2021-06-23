@@ -4,13 +4,15 @@ import * as React from 'react'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+
+// components
 import Hero from '../components/Hero'
 import InfoBox from '../components/InfoBox'
 import SiteSection from '../components/SiteSection'
 import SectionHeader from '../components/SectionHeader'
 import CtaCardWrapper from '../components/CtaCard/wrapper'
 import IconGrid from '../components/IconGrid'
-import MemberInfoWrapper from '../components/MemberCard/infoWrapper'
+import MemberWrapper from '../components/MemberCard/wrapper'
 import NewsSlider from '../components/NewsSlider'
 
 // constants
@@ -39,7 +41,7 @@ const IndexPage = () => (
       <IconGrid {...IG_INVESTMENTS} />
     </SiteSection>
     <SiteSection>
-      <MemberInfoWrapper {...PC_MEMBERS_INFO} members={PC_MEMBERS_HOMEPAGE} />
+      <MemberWrapper {...PC_MEMBERS_INFO} members={PC_MEMBERS_HOMEPAGE} />
     </SiteSection>
     <SiteSection>
       <NewsSlider {...NEWS_SLIDER} />

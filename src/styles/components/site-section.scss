@@ -17,6 +17,10 @@
         }
     }
 
+    &--green {
+        background-color: #f4faf3;
+    }
+
     &--bg-hp {
         @include media-breakpoint-up(md) {
             background-image: url('../assets/img/hero-hp.png');

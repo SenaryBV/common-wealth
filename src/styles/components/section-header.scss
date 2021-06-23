@@ -10,10 +10,27 @@
     }
 
     &__descr {
+        width: 90%;
         max-width: 675px;
         margin: 0 auto;
         font-size: 18px;
         line-height: 1.555;
+    }
+
+    &--hero {
+    }
+
+    &--hero & {
+        &__title {
+            font-weight: 700;
+            font-size: 82px;
+            color: #282e30;
+            margin-bottom: 28px;
+        }
+
+        &__descr {
+            color: #80868c;
+        }
     }
 
     @include media-breakpoint-down(sm) {
@@ -21,6 +38,26 @@
 
         &__descr {
             font-size: 16px;
+        }
+
+        &--hero & {
+            &__title {
+                font-size: 42px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        &--hero {
+            margin-bottom: 90px;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        &--hero {
+            padding-top: 15px;
+            margin-bottom: 105px;
         }
     }
 }

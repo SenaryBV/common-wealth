@@ -1,5 +1,6 @@
 .member-card {
     display: flex;
+    justify-content: space-between;
 
     &__name {
         font-weight: 700;
@@ -28,6 +29,7 @@
     &__img {
         border-radius: 16px;
         overflow: hidden;
+        flex-shrink: 0;
 
         img {
             display: block;
@@ -109,6 +111,74 @@
             &__img {
                 width: 196px;
                 height: 196px;
+            }
+        }
+    }
+
+    &--reverse {
+        @include media-breakpoint-down(lg-up) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &:not(.member-card--sm) {
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+        }
+    }
+
+    &:not(.member-card--sm) & {
+        @include media-breakpoint-down(sm) {
+            &__img {
+                width: 100%;
+                height: 322px;
+                max-width: 335px;
+            }
+        }
+
+        @include media-breakpoint-between(sm, lg) {
+            &__img {
+                height: 440px;
+                width: 460px;
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            &__img {
+                order: -1;
+                margin: 0 auto 40px;
+            }
+
+            &__position,
+            &__name {
+                text-align: center;
+            }
+
+            &__position {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @include media-breakpoint-only(lg) {
+            &__info {
+                width: 460px;
+            }
+
+            &__img {
+                height: 440px;
+                width: 460px;
+            }
+        }
+
+        @include media-breakpoint-up(xl) {
+            &__info {
+                width: 480px;
+            }
+
+            &__img {
+                height: 440px;
+                width: 540px;
             }
         }
     }

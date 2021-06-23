@@ -29,3 +29,26 @@ export const IB_HOW_IT_WORKS = {
     },
   ],
 }
+
+export const IB_THE_OPPORTUNITY = {
+  modifier: null,
+  title: 'The Opportunity',
+  descr:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget etiam felis habitasse sit neque adipiscing at sit. Sapien proin a, varius vel. Posuere proin ornare sollicitudin sed ultrices. Nulla phasellus faucibus turpis sagittis ac donec id.',
+  cta: [
+    {
+      name: 'Our thesis',
+      attrs: {
+        to: '/',
+        className: 'btn btn-primary',
+      },
+    },
+    {
+      name: 'Invest with us',
+      attrs: {
+        to: '/investment-disiplines/',
+        className: 'btn btn-primary',
+      },
+    },
+  ],
+}
