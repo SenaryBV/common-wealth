@@ -1,5 +1,4 @@
 export const HERO_HOMEPAGE = {
-  modifier: 'hp',
   title: 'Commonwealth',
   descr: 'A tokenized innovation community leading the global development of Web3',
   stats: [
@@ -35,4 +34,9 @@ export const HERO_HOMEPAGE = {
       },
     },
   ],
+}
+
+export const HERO_GROWTH_STRATEGIES = {
+  ...HERO_HOMEPAGE,
+  title: 'Growth Strategies',
 }

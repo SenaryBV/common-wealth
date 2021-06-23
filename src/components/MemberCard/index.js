@@ -7,7 +7,7 @@ export const MemberCard = ({ modifier, name, position, about, img }) => {
       <div className="member-card__info">
         <h3 className="member-card__name">{name}</h3>
         <div className="member-card__position">{position}</div>
-        <div className="member-card__about">{about}</div>
+        <div className="member-card__about" dangerouslySetInnerHTML={{ __html: about }}></div>
       </div>
       <div className="member-card__img">
         <img src={img} alt={name} />

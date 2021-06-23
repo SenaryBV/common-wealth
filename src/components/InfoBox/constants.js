@@ -12,6 +12,7 @@ export const IB_SOFTWARE = {
       },
     },
   ],
+  img: '/ibox/software.svg',
 }
 
 export const IB_HOW_IT_WORKS = {
@@ -28,6 +29,7 @@ export const IB_HOW_IT_WORKS = {
       },
     },
   ],
+  img: '/ibox/how-it-works.svg',
 }
 
 export const IB_THE_OPPORTUNITY = {
@@ -51,4 +53,56 @@ export const IB_THE_OPPORTUNITY = {
       },
     },
   ],
+  img: '/ibox/opportunity.svg',
+}
+
+export const IB_CAPITAL_INVESTMENTS = {
+  modifier: null,
+  title: 'Capital Investments',
+  descr:
+    'Capital partners with foudners and emerging networks at the earliest stage to accelerate the growth and coordination of emergent crypto economies.',
+  cta: [
+    {
+      name: 'Invest with us',
+      attrs: {
+        to: '/investment-disiplines/',
+        className: 'btn btn-primary',
+      },
+    },
+  ],
+  img: '/ibox/capital-investment.svg',
+}
+
+export const IB_TRADING = {
+  modifier: null,
+  title: 'Trading',
+  descr:
+    'Algorithmically managing a liquid book of crypto assets, our DeFi-native trading practice employs dedicated strategies  to maxamize yeild and expliot risk - return assymetires that we uncover. ',
+  cta: [
+    {
+      name: 'Invest with us',
+      attrs: {
+        to: '/investment-disiplines/',
+        className: 'btn btn-primary',
+      },
+    },
+  ],
+  img: '/ibox/trading.svg',
+}
+
+export const IB_LABS_DAO = {
+  modifier: null,
+  title: 'Labs DAO',
+  descr:
+    '<p>Commonwealth incubated Labs DAO as a decentralized innovation community accelerating the global development of crypto economies. </p> <p>Labs DAO aims to accelerate the development of community infrastructure through novel coordination frameworks designed specifically to maximise the value of tokenized software’s native composability. </p>',
+  cta: [
+    {
+      name: 'Learn more',
+      attrs: {
+        to: '/how-it-works/',
+        className: 'btn btn-primary',
+      },
+    },
+  ],
+  img: '/ibox/labs-dao.svg',
 }

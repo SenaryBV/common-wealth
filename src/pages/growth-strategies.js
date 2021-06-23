@@ -1,18 +1,29 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
-
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
-import { Container } from 'react-bootstrap'
+// components
+import Hero from '../components/Hero'
+import InfoBox from '../components/InfoBox'
+import SiteSection from '../components/SiteSection'
+
+// constants
+import { HERO_GROWTH_STRATEGIES } from '../components/Hero/constants'
+import { IB_CAPITAL_INVESTMENTS, IB_TRADING, IB_LABS_DAO, IB_HOW_IT_WORKS } from '../components/InfoBox/constants'
+
+const infoBoxes = [IB_CAPITAL_INVESTMENTS, IB_TRADING, IB_LABS_DAO, IB_HOW_IT_WORKS]
 
 const GrowthStrategies = () => (
   <Layout>
-    <Container>
-      <SEO title="Growth Strategies'" />
-      <h1>Growth Strategies</h1>
-      <Link to="/">Go back to the homepage</Link>
-    </Container>
+    <SEO title="Growth Strategies'" />
+    <SiteSection>
+      <Hero {...HERO_GROWTH_STRATEGIES} />
+    </SiteSection>
+    {infoBoxes.map((props, index) => (
+      <SiteSection>
+        <InfoBox {...props} modifier={index % 2 && 'reverse'} />
+      </SiteSection>
+    ))}
   </Layout>
 )
 

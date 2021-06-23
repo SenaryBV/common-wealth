@@ -14,6 +14,7 @@ import CtaCardWrapper from '../components/CtaCard/wrapper'
 import IconGrid from '../components/IconGrid'
 import MemberWrapper from '../components/MemberCard/wrapper'
 import NewsSlider from '../components/NewsSlider'
+import { SoftwareSVG } from '../components/SVG'
 
 // constants
 import { HERO_HOMEPAGE } from '../components/Hero/constants'
