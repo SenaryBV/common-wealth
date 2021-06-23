@@ -30,4 +30,13 @@
             background-size: 100% 100%;
         }
     }
+
+    &--bg-how {
+        background-image: url('../assets/img/hero-how.png');
+
+        @include media-breakpoint-down(xl) {
+            background-size: auto;
+            background-position: 0 bottom;
+        }
+    }
 }

@@ -8,7 +8,7 @@ const InfoBox = ({ modifier, title, descr, cta, img }) => {
       <div className="info-box__main">
         <h2 className="info-box__title h2">{title}</h2>
         <div className="info-box__descr" dangerouslySetInnerHTML={{ __html: descr }}></div>
-        {cta && (
+        {cta && cta.length > 0 && (
           <div className="info-box__cta">
             {cta.map(({ name, attrs }) => (
               <Link key={name} {...attrs}>

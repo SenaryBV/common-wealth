@@ -106,3 +106,28 @@ export const IB_LABS_DAO = {
   ],
   img: '/ibox/labs-dao.svg',
 }
+
+export const IB_MEMBER_PORTAL = {
+  modifier: null,
+  title: 'Private Member Portal',
+  descr:
+    'A token-gated community space for full on-chain transparency into asset details, access to exclusive media content and resources, hosted forums and TBA live events.',
+  cta: [],
+  img: '/ibox/member-portal.svg',
+}
+
+export const IB_HYPERLIQUIDITY = {
+  modifier: null,
+  title: 'Hyperliquidity',
+  descr: 'Lightweight lockups and token liquidity offer freedom to seeking to scale thier COMMON holdings up or down.',
+  cta: [],
+  img: '/ibox/hyperliquidity.svg',
+}
+
+export const IB_SHARED_UPSIDE = {
+  modifier: null,
+  title: 'Shared Upside',
+  descr: "Purchase tokenizied shares of Commonwealth's inivestments into the next era of digital economies.",
+  cta: [],
+  img: '/ibox/shared-upside.svg',
+}

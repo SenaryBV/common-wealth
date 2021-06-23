@@ -40,3 +40,8 @@ export const HERO_GROWTH_STRATEGIES = {
   ...HERO_HOMEPAGE,
   title: 'Growth Strategies',
 }
+
+export const HERO_HOW_IT_WORKS = {
+  title: 'How it works',
+  descr: 'Our tokenized community invests in the growth of dezentralized technologies',
+}
