@@ -30,7 +30,7 @@ const AboutUs = () => (
     <SiteSection modifier="sm">
       <IconGrid {...IG_OUR_PARTNERS} />
     </SiteSection>
-    <SiteSection>
+    <SiteSection modifier="green">
       <InfoBox {...IB_THE_OPPORTUNITY} />
     </SiteSection>
     <SiteSection>

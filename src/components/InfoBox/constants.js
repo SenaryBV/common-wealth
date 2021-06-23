@@ -34,7 +34,7 @@ export const IB_THE_OPPORTUNITY = {
   modifier: null,
   title: 'The Opportunity',
   descr:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget etiam felis habitasse sit neque adipiscing at sit. Sapien proin a, varius vel. Posuere proin ornare sollicitudin sed ultrices. Nulla phasellus faucibus turpis sagittis ac donec id.',
+    'Blockchain technology and Web3 software are rewriting opportunities for innovation, democratizing value creation and exchange, and merging common purpose with common enterprise by aligning incentives. Senary Commonwealth creates, invests, and utilizes software as a liquid asset to contribute to our greater, shared humanity while reversing today’s exploitative digital infrastructure. Our thesis is a certainty: meaningful contributions during this dawn of human progress will yield immense rewards for those invested in its promise.',
   cta: [
     {
       name: 'Our thesis',
