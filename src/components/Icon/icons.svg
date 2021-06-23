@@ -10,4 +10,7 @@
     <path d="M1.33337 22.6667L22.6667 1.33337" stroke="currentColor" stroke-width="2.66667" stroke-linejoin="round" />
     <path d="M1.33337 1.33337L22.6667 22.6667" stroke="currentColor" stroke-width="2.66667" stroke-linejoin="round" />
   </symbol>
+  <symbol id="chevron-up" viewBox="0 0 18 10">
+    <path d="M0.515137 1.46495L9.00014 9.94995L17.4851 1.46495L16.0711 0.0499516L9.00014 7.12195L1.92914 0.0499516L0.515137 1.46495Z" fill="currentColor" />
+  </symbol>
 </svg>
