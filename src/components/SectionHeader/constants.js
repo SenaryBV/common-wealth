@@ -10,3 +10,9 @@ export const SH_ABOUT_US = {
   descr:
     'Formed by a team with deep knowledge in Web2 and Web3, and a commitment to building and investing in the systems revolutionizing our world.',
 }
+
+export const SH_СONTENT = {
+  hero: true,
+  title: 'Content',
+  descr: null,
+}

@@ -1,0 +1,12 @@
+.news-data {
+    display: flex;
+    align-items: center;
+    color: #80868c;
+
+    &__divider {
+        width: 1px;
+        height: 12px;
+        background-color: #80868c;
+        margin: 0 15px;
+    }
+}

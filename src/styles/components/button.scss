@@ -20,3 +20,23 @@ button {
 .btn-primary {
   color: #fff !important;
 }
+
+.cta-more {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+  color: #82b97e;
+  transition: color 0.2s;
+
+  &:hover {
+    color: darken(#82b97e, 5%);
+  }
+
+  svg {
+    margin-left: 0.5em;
+    margin-top: 3px;
+  }
+}

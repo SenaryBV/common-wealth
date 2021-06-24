@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
 // components
-
 import InfoBox from '../components/InfoBox'
 import SiteSection from '../components/SiteSection'
 import SectionHeader from '../components/SectionHeader'

@@ -5,24 +5,6 @@
     overflow: hidden;
     position: relative;
 
-    &__label {
-        position: absolute;
-        top: 12px;
-        right: 12px;
-        padding: 8px 14px;
-        background: #f6fbf7;
-        border: 1px solid #82b97e;
-        border-radius: 12px;
-        font-size: 12px;
-        line-height: 1;
-        white-space: nowrap;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #82b97e;
-    }
-
     &__img {
         overflow: hidden;
         height: 200px;
@@ -47,16 +29,23 @@
         margin: 0 0 8px;
     }
 
-    &__data {
-        display: flex;
-        align-items: center;
-        color: #80868c;
+    .news-label {
+        position: absolute;
+        top: 12px;
+        right: 12px;
     }
+}
 
-    &__divider {
-        width: 1px;
-        height: 12px;
-        background-color: #80868c;
-        margin: 0 15px;
-    }
+.news-label {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #f6fbf7;
+    border: 1px solid #82b97e;
+    border-radius: 12px;
+    font-size: 12px;
+    line-height: 1;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #82b97e;
 }
