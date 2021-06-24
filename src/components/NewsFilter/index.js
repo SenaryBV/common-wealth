@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FilterResults from './results'
 import { Form } from 'react-bootstrap'
+import classNames from 'classnames'
 
 //constants
 import { values } from './constants'
@@ -21,13 +22,19 @@ const NewsFilter = () => {
     <div className="news-filter">
       <div className="news-filter__controls">
         <div className="news-filter__values">
-          <span className="news-filter__value news-label is-active" onClick={() => setStates(null)}>
-            All Categories
-          </span>
+          <Form.Check
+            className={classNames('news-filter__value', value == null && 'show-all')}
+            type="radio"
+            id="filter-all"
+          >
+            <Form.Check.Input onChange={() => setStates(null)} name="filter-news" type="radio" />
+            <Form.Check.Label className="news-label"> All Categories</Form.Check.Label>
+          </Form.Check>
           {values.map((value) => (
-            <span key={value} className="news-filter__value news-label" onClick={() => setStates(value)}>
-              {value === null ? 'All Categories' : value}
-            </span>
+            <Form.Check className="news-filter__value" type="radio" id={`filter-${value}`}>
+              <Form.Check.Input onChange={() => setStates(value)} name="filter-news" type="radio" />
+              <Form.Check.Label className="news-label">{value}</Form.Check.Label>
+            </Form.Check>
           ))}
         </div>
         <div className="news-filter__search">

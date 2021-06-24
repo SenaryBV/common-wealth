@@ -14,9 +14,18 @@
     &__value {
         cursor: pointer;
 
-        &.is-active {
+        input:checked + label,
+        &.show-all label {
             color: #fff;
             background: #82b97e;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        input {
+            display: none;
         }
     }
 
