@@ -6,6 +6,7 @@ import SEO from '../components/seo'
 import SiteSection from '../components/SiteSection'
 import SectionHeader from '../components/SectionHeader'
 import NewsPreview from '../components/NewsPreview'
+import NewsFilter from '../components/NewsFilter'
 
 // constants
 import { SH_СONTENT } from '../components/SectionHeader/constants'
@@ -19,6 +20,9 @@ const Content = () => (
     </SiteSection>
     <SiteSection>
       <NewsPreview {...NEWS_PREVIEW} />
+    </SiteSection>
+    <SiteSection modifier="filter">
+      <NewsFilter />
     </SiteSection>
   </Layout>
 )
