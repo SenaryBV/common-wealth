@@ -6,7 +6,7 @@ const InfoBox = ({ modifier, title, descr, cta, img }) => {
   return (
     <div className={classNames('info-box', modifier && `info-box--${modifier}`)}>
       <div className="info-box__main">
-        <h2 className="info-box__title h2">{title}</h2>
+        {title && <h2 className="info-box__title h2">{title}</h2>}
         <div className="info-box__descr" dangerouslySetInnerHTML={{ __html: descr }}></div>
         {cta && cta.length > 0 && (
           <div className="info-box__cta">

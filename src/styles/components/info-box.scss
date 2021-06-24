@@ -20,6 +20,10 @@
     &__descr {
         margin-bottom: 28px;
 
+        p {
+            margin-bottom: 1.5em;
+        }
+
         > :last-child {
             margin-bottom: 0;
         }

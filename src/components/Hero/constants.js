@@ -45,3 +45,9 @@ export const HERO_HOW_IT_WORKS = {
   title: 'How it works',
   descr: 'Our tokenized community invests in the growth of dezentralized technologies',
 }
+
+export const HERO_SLA = {
+  title: 'Software is a Liquid Asset',
+  descr:
+    'Today we face significant global, social and economic issues; all demanding urgent solutions. Increasingly so, new innovations are required to foster viable solutions. Decentralized technologies represent a new paradigm of coordination technology, and they present us with new possibilities for coordinating collective action.',
+}

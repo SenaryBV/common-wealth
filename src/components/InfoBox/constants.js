@@ -131,3 +131,75 @@ export const IB_SHARED_UPSIDE = {
   cta: [],
   img: '/ibox/shared-upside.svg',
 }
+
+export const IB_SLA_1 = {
+  modifier: null,
+  title: null,
+  descr:
+    '<p>Web2 has created a lot of economic value, however its models remain exploitative, and that value rarely accrues to those who actually create it. </p> <p>As such, it’s become unsustainable and its affects undesirable, stuffed to the brim with “vulture capital” money that more often maligns users than it does align with their values and best interests. </p> <p>Ask yourself honestly, of all the VC-backed startups and loosely deployed venture capital, how many of these startups actually create sustainable and long-term value for our society? How many are worth the new problems they create? We argue not many, and that there must be a better way.</p>',
+  cta: [],
+  img: '/ibox/sla-1.svg',
+}
+
+export const IB_SLA_2 = {
+  modifier: null,
+  title: null,
+  descr:
+    '<p>SLA is our call to this new era for mainstream public computing. As you read this, Web3’s enabling technology is creating a necessary shift in the economic models underpinning our digital lives, which as it should, faithfully advances the internet’s founding values – of abundance, privacy and sovereignty. </p><p>In this new era of decentralized computing, software is both more flexible and fluid than ever before. It embodies public infrastructure, and to develop decentralized software, to distribute it, use it, invest in it and create with it is all to manage this liquid asset.</p><p>In Web3, Software is a Liquid Asset.</p>',
+  cta: [],
+  img: '/ibox/sla-2.svg',
+}
+
+export const IB_SLA_3 = {
+  modifier: null,
+  title: null,
+  descr:
+    '<p>A token example is the token itself. Tokens are flexible: We have tokens as cryptocurrencies, tokens as shares of equity, tokens as novel debt instruments, tokens representing authority in new governance models, game tokens, loyalty tokens, collectible tokens, tokens of tokenized physical assets, tokens in synthetic assets, tokens representing new structures and ideas. Any single token can embody any number of these characteristics, and more.</p>',
+  cta: [],
+  img: '/ibox/sla-3.svg',
+}
+
+export const IB_SLA_4 = {
+  modifier: null,
+  title: null,
+  descr:
+    '<p>Tokens are fluid: Their functional characteristics evolve in time or context. Novel incentives promote the adoption of open-source standards, and tokens to flow seamlessly amidst a vast ecosystem of composable software, including many new and powerful crypto-economic mechanisms. With these technologies, we can buy tokens with tokens, borrow them, pledge them, swap them, mint dollars against them (you read that correctly), auction them or donate them.</p>',
+  cta: [],
+  img: '/ibox/sla-4.svg',
+}
+
+export const IB_SLA_5 = {
+  modifier: null,
+  title: null,
+  descr:
+    '<p>So, whether the token itself is the very point of the product or merely a behind-the-scenes implementation detail, at the heart of most every decentralized technology lay a token — the token of token economics. To engineer decentralized software is to engineer economics; innovation’s meter is fed with tokens.</p>',
+  cta: [],
+  img: '/ibox/sla-5.svg',
+}
+
+export const IB_SLA_6 = {
+  modifier: null,
+  title: null,
+  descr:
+    '<p>But tokens don’t just feed innovation, they breed it too.Today, well-engineered token systems are aligning vales and incentives without centralized control, and doing so more efficiently than ever before — at seemingly limitless scale and with de-minimis risk and cost. Projects form freely and define value in any way they’d like, engineering their incentives and economics accordingly. </p><p>Rigid categories like owner, developer, customer, and user blend together. Concepts like sales, product, marketing, distribution, partnerships, and investor become hazy and remote. </p>',
+  cta: [],
+  img: '/ibox/sla-6.svg',
+}
+
+export const IB_SLA_7 = {
+  modifier: null,
+  title: null,
+  descr:
+    '<p>As ownership structures are re-aligned and new models for decentralized cooperation, governance and value creation emerge, we’re all encouraged to refactor our mental models, and we’re all better for it. These innovations and their design space are vast, their evident advantages now unavoidable, and as an accelerant to human progress, their role is undeniable.</p><p>This new class of highly composable and superfluid digital assets grow exponentially every day, and with each development, we’re challenged again-and-again to reimagine the who, when, how and why of software development. </p>',
+  cta: [],
+  img: '/ibox/sla-7.svg',
+}
+
+export const IB_SLA_8 = {
+  modifier: null,
+  title: null,
+  descr:
+    '<p>Dedicated to the advancement of decentralized technologies and the positive-sum economies they enable, Commonwealth aggressively invests in these new systems, via new economics and in their uncompromising growth. Ours included, Web3’s meaningful innovations are deployed directly to ‘main net’ — itself paradigm shift. Join us in building a better way.</p>',
+  cta: [],
+  img: '/ibox/sla-8.svg',
+}

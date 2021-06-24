@@ -12,11 +12,12 @@
     }
 
     &__descr {
+        max-width: 800px;
+        margin: 0 auto 51px;
         text-align: center;
         font-size: 18px;
         line-height: 1.555;
         letter-spacing: 0.3px;
-        margin-bottom: 51px;
     }
 
     &__stats {

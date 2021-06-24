@@ -39,4 +39,17 @@
             background-position: 0 bottom;
         }
     }
+
+    &--bg-sla {
+        background-image: url('../assets/img/hero-sla.png');
+
+        @include media-breakpoint-down(sm) {
+            background-position: -200px bottom;
+            background-size: auto;
+        }
+
+        @include media-breakpoint-up(xl) {
+            background-size: 100% 100%;
+        }
+    }
 }
