@@ -15,12 +15,12 @@ export const CC_HOMEPAGE = [
       to: '/',
     },
   },
-  {
-    modifier: 'labs',
-    title: 'Labs DAO',
-    descr: 'Incubated to accelerate networked innovation and the global development of decentralized networks.',
-    cta: {
-      to: '/',
-    },
-  },
+  // {
+  //   modifier: 'labs',
+  //   title: 'Labs DAO',
+  //   descr: 'Incubated to accelerate networked innovation and the global development of decentralized networks.',
+  //   cta: {
+  //     to: '/',
+  //   },
+  // },
 ]

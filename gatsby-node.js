@@ -5,8 +5,8 @@
  */
 
 // You can delete this file if you're not using it
-
 const path = require('path')
+const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
@@ -19,5 +19,41 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         '~images': path.resolve(__dirname, 'src/images'),
       },
     },
+  })
+}
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+  if (node.internal.type === `Article`) {
+    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    createNodeField({
+      node,
+      name: `id`,
+      value: id,
+    })
+  }
+}
+
+exports.createPages = async ({ graphql, actions }) => {
+  // const { createPage } = actions
+  const { data } = await graphql(`
+    query {
+      allDatoCmsArticle {
+        nodes {
+          id
+          date
+          title
+        }
+      }
+    }
+  `)
+  data.allDatoCmsArticle.nodes.forEach((node) => {
+    actions.createPage({
+      path: '/content/' + node.id,
+      component: path.resolve(`./src/templates/single.js`),
+      context: {
+        id: node.id,
+      },
+    })
   })
 }

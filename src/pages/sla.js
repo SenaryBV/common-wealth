@@ -31,17 +31,17 @@ const SLA = () => (
     </SiteSection>
     <SiteSection modifier="sm">
       <MsgBox>
-        History rhymes. Time and again, the emergence of open coordination systems has unlocked sustained periods of
-        economic growth and prosperity — we believe the Internet is no exception.
+        Decentralized technologies represent a new paradigm for coordination technology and unlock new models for
+        positive sum economies and pro-social innovation.
       </MsgBox>
     </SiteSection>
     {[IB_SLA_1, IB_SLA_2].map((props, index) => (
-      <SiteSection modifier="green">
+      <SiteSection modifier="green" key={index}>
         <InfoBox {...props} modifier={index % 2 && 'reverse'} />
       </SiteSection>
     ))}
     {[IB_SLA_3, IB_SLA_4, IB_SLA_5].map((props, index) => (
-      <SiteSection>
+      <SiteSection key={index}>
         <InfoBox {...props} modifier={index % 2 && 'reverse'} />
       </SiteSection>
     ))}
@@ -49,7 +49,7 @@ const SLA = () => (
       <MsgBox>Out of Senary Ventures we formed Senary Commonwealth, a tokenized Web3 Innovation Community.</MsgBox>
     </SiteSection>
     {[IB_SLA_6, IB_SLA_7, IB_SLA_8].map((props, index) => (
-      <SiteSection modifier="green">
+      <SiteSection modifier="green" key={index}>
         <InfoBox {...props} modifier={index % 2 && 'reverse'} />
       </SiteSection>
     ))}

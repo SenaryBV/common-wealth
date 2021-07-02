@@ -1,6 +1,6 @@
 module.exports = {
   flags: {
-    DEV_SSR: true,
+    DEV_SSR: false,
   },
   siteMetadata: {
     title: 'Commonwealth',
@@ -31,6 +31,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
+    // `gatsby-source-graphql`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        footnotes: true,
+      },
+    },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
@@ -56,6 +63,13 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: `ba8f3975fa0fdfa9358789899a338a`,
       },
     },
     // {

@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
@@ -17,6 +17,8 @@ import {
   IB_MEMBER_PORTAL,
   IB_HYPERLIQUIDITY,
   IB_SHARED_UPSIDE,
+  FULL_TRANSPARENCY,
+  INVESTING_FOR_GROWTH,
   IB_SOFTWARE,
   IB_THE_OPPORTUNITY,
 } from '../components/InfoBox/constants'
@@ -24,37 +26,35 @@ import { SH_GROWTH_STRATEGIES } from '../components/SectionHeader/constants'
 import { CC_HOMEPAGE } from '../components/CtaCard/constants'
 import { FAQ } from '../components/Accordion/constants'
 
-const HowItWorks = () => (
-  <Layout>
-    <SEO title="How it works" />
-    <SiteSection modifier="bg-how">
-      <Hero {...HERO_HOW_IT_WORKS} />
-    </SiteSection>
-    <SiteSection modifier="sm">
-      <MsgBox>
-        Commonwealth tokens ($COMMON) represents pro-rata membership shares in Commonwealth’s underlying basket of
-        tokenassets and growth strategies.
-      </MsgBox>
-    </SiteSection>
-    {[IB_MEMBER_PORTAL, IB_HYPERLIQUIDITY, IB_SHARED_UPSIDE].map((props, index) => (
-      <SiteSection key={props.title}>
-        <InfoBox {...props} modifier={index % 2 && 'reverse'} />
+const HowItWorks = () => {
+  return (
+    <Layout>
+      <SEO title="How it works" />
+      <SiteSection modifier="bg-how">
+        <Hero {...HERO_HOW_IT_WORKS} />
       </SiteSection>
-    ))}
-    <SiteSection>
-      <SectionHeader {...SH_GROWTH_STRATEGIES} />
-      <CtaCardWrapper ctaCards={CC_HOMEPAGE} />
-    </SiteSection>
-    <SiteSection modifier="green">
-      <InfoBox {...IB_THE_OPPORTUNITY} />
-    </SiteSection>
-    <SiteSection>
-      <Accordion {...FAQ} />
-    </SiteSection>
-    <SiteSection>
-      <InfoBox {...IB_SOFTWARE} />
-    </SiteSection>
-  </Layout>
-)
+      <SiteSection modifier="sm">
+        <MsgBox>
+          Investors purchase $COMMON tokens, which are pro-rata membership shares in Senary Commonwealth and its
+          continuously evolving portfolio.
+        </MsgBox>
+      </SiteSection>
+      {[IB_MEMBER_PORTAL, IB_HYPERLIQUIDITY, FULL_TRANSPARENCY].map((props, index) => (
+        <SiteSection key={props.title}>
+          <InfoBox {...props} modifier={index % 2 && 'reverse'} />
+        </SiteSection>
+      ))}
+      <SiteSection modifier="green">
+        <InfoBox {...INVESTING_FOR_GROWTH} />
+      </SiteSection>
+      <SiteSection>
+        <Accordion {...FAQ} />
+      </SiteSection>
+      <SiteSection>
+        <InfoBox {...IB_SOFTWARE} />
+      </SiteSection>
+    </Layout>
+  )
+}
 
 export default HowItWorks

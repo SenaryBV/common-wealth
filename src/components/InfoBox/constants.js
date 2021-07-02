@@ -2,7 +2,7 @@ export const IB_SOFTWARE = {
   modifier: null,
   title: 'Software is a Liquid Asset',
   descr:
-    'Decentralized technologies represent a new paradigm for coordination technology and unlock new models for positive-sum economies and pro-social innovation. In Web3, Software is a Liquid Asset. ',
+    '<p>Decentralized technologies represent a new paradigm for coordination technology and unlock new models for positive sum economies and pro-social innovation.</p><p>In Web3, Software is a Liquid Asset. Learn more</p>',
   cta: [
     {
       name: 'Invest',
@@ -19,7 +19,7 @@ export const IB_HOW_IT_WORKS = {
   modifier: 'reverse',
   title: 'How it works',
   descr:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget etiam felis habitasse sit neque adipiscing at sit. Sapien proin a, varius vel. Posuere proin ornare sollicitudin sed ultrices. Nulla phasellus faucibus turpis sagittis ac donec id.',
+    'Senary Commonwealth provides accredited investors a single point of access to an actively and professionally managed, continuously evolving portfolio of decentralized cryptoassets.',
   cta: [
     {
       name: 'Learn more',
@@ -40,6 +40,31 @@ export const IB_THE_OPPORTUNITY = {
   cta: [
     {
       name: 'Our thesis',
+      attrs: {
+        to: '/',
+        className: 'btn btn-primary',
+      },
+    },
+    {
+      name: 'Invest with us',
+      attrs: {
+        to: '/investment-disiplines/',
+        className: 'btn btn-primary',
+      },
+    },
+  ],
+  img: '/ibox/opportunity.svg',
+}
+
+// New Content
+export const INVESTING_FOR_GROWTH = {
+  modifier: null,
+  title: 'Investing for growth',
+  descr:
+    'We support early-stage protocols and applications building open and decentralized infrastructure for global finance, media, creative work, future-of-work and collective action. Our investments are rigorously vetted and made either as direct investments into openly traded digital assets or via agreements for (often discounted) future token equity.',
+  cta: [
+    {
+      name: 'Apply for funding',
       attrs: {
         to: '/',
         className: 'btn btn-primary',
@@ -111,7 +136,7 @@ export const IB_MEMBER_PORTAL = {
   modifier: null,
   title: 'Private Member Portal',
   descr:
-    'A token-gated community space for full on-chain transparency into asset details, access to exclusive media content and resources, hosted forums and TBA live events.',
+    '·Proprietary Member Portal: token-permissioned, interactive application granting investors insight into pre-launch and public holdings with real- time pricing detail, fund metrics and discussion of activities.',
   cta: [],
   img: '/ibox/member-portal.svg',
 }
@@ -119,7 +144,7 @@ export const IB_MEMBER_PORTAL = {
 export const IB_HYPERLIQUIDITY = {
   modifier: null,
   title: 'Hyperliquidity',
-  descr: 'Lightweight lockups and token liquidity offer freedom to seeking to scale thier COMMON holdings up or down.',
+  descr: 'investors may join at any time and may exit positions, in whole or in part, in as little as one year.',
   cta: [],
   img: '/ibox/hyperliquidity.svg',
 }
@@ -132,11 +157,20 @@ export const IB_SHARED_UPSIDE = {
   img: '/ibox/shared-upside.svg',
 }
 
+export const FULL_TRANSPARENCY = {
+  modifier: null,
+  title: 'Full Transparency',
+  descr:
+    'Fund operations are built on the public Ethereum blockchain, reflecting our commitment to crypto’s global ethos of openness, values-alignment and community participation.',
+  cta: [],
+  img: '/ibox/shared-upside.svg',
+}
+
 export const IB_SLA_1 = {
   modifier: null,
   title: null,
   descr:
-    '<p>Web2 has created a lot of economic value, however its models remain exploitative, and that value rarely accrues to those who actually create it. </p> <p>As such, it’s become unsustainable and its affects undesirable, stuffed to the brim with “vulture capital” money that more often maligns users than it does align with their values and best interests. </p> <p>Ask yourself honestly, of all the VC-backed startups and loosely deployed venture capital, how many of these startups actually create sustainable and long-term value for our society? How many are worth the new problems they create? We argue not many, and that there must be a better way.</p>',
+    '<p>The legacy models of our digital economies are broken.</p> <p>They’re unavoidably shaped by perverse incentives that produce misaligned value accrual. They depend on exploitative and ‘proprietary’ data models which, most importantly, are wholly incapable of accounting for and thus advancing intrinsically valuable artifacts; ones that aren’t tainted by the advertising dollars which today unfortunately come to appraise them.</p> <p>Our web is capable of much more, of advancing open and sustainable systems that create long-term value for our societies that is owned and operated by the people who build and maintain them.</p>',
   cta: [],
   img: '/ibox/sla-1.svg',
 }
@@ -145,7 +179,7 @@ export const IB_SLA_2 = {
   modifier: null,
   title: null,
   descr:
-    '<p>SLA is our call to this new era for mainstream public computing. As you read this, Web3’s enabling technology is creating a necessary shift in the economic models underpinning our digital lives, which as it should, faithfully advances the internet’s founding values – of abundance, privacy and sovereignty. </p><p>In this new era of decentralized computing, software is both more flexible and fluid than ever before. It embodies public infrastructure, and to develop decentralized software, to distribute it, use it, invest in it and create with it is all to manage this liquid asset.</p><p>In Web3, Software is a Liquid Asset.</p>',
+    '<p>Web3 technology enables these positive-sum economies to thrive, eliminates coordination costs and scales ownership and governance in web-native ways.</p><p> It creates a necessary shift in the economic models underpinning our digital lives while it faithfully advances the internet’s founding values of abundance, privacy, and sovereignty.</p><p>Web3 software is both more flexible and fluid than ever before, and to develop decentralized software, to distribute it, use it, invest in it and create with it is all to manage this liquid asset.</p><p>In Web3, Software is a Liquid Asset</p>',
   cta: [],
   img: '/ibox/sla-2.svg',
 }
@@ -181,7 +215,7 @@ export const IB_SLA_6 = {
   modifier: null,
   title: null,
   descr:
-    '<p>But tokens don’t just feed innovation, they breed it too.Today, well-engineered token systems are aligning vales and incentives without centralized control, and doing so more efficiently than ever before — at seemingly limitless scale and with de-minimis risk and cost. Projects form freely and define value in any way they’d like, engineering their incentives and economics accordingly. </p><p>Rigid categories like owner, developer, customer, and user blend together. Concepts like sales, product, marketing, distribution, partnerships, and investor become hazy and remote. </p>',
+    '<p>But tokens don’t just feed innovation, they breed it too.</p><p>Today, well-engineered token systems are aligning vales and incentives without centralized control at de-minimis risk and cost and with seemingly infinite scale. </p><p>Projects form freely and define value in the ways they’d like, engineering their incentives and economics accordingly. Rigid categories like owner, developer, customer, and user blend together. </p><p>Concepts like sales, product, marketing, distribution, partnerships, and investor become hazy and remote.</p>',
   cta: [],
   img: '/ibox/sla-6.svg',
 }
@@ -190,7 +224,7 @@ export const IB_SLA_7 = {
   modifier: null,
   title: null,
   descr:
-    '<p>As ownership structures are re-aligned and new models for decentralized cooperation, governance and value creation emerge, we’re all encouraged to refactor our mental models, and we’re all better for it. These innovations and their design space are vast, their evident advantages now unavoidable, and as an accelerant to human progress, their role is undeniable.</p><p>This new class of highly composable and superfluid digital assets grow exponentially every day, and with each development, we’re challenged again-and-again to reimagine the who, when, how and why of software development. </p>',
+    '<p>This new class of highly composable and superfluid digital asset grows exponentially every day, and with each development, we’re challenged again-and-again to reimagine the who, when, how and why of software development.</p>',
   cta: [],
   img: '/ibox/sla-7.svg',
 }
@@ -199,7 +233,7 @@ export const IB_SLA_8 = {
   modifier: null,
   title: null,
   descr:
-    '<p>Dedicated to the advancement of decentralized technologies and the positive-sum economies they enable, Commonwealth aggressively invests in these new systems, via new economics and in their uncompromising growth. Ours included, Web3’s meaningful innovations are deployed directly to ‘main net’ — itself paradigm shift. Join us in building a better way.</p>',
+    '<p>Commonwealth is a tokenized innovation community inspired by the global development of Web3.</p><p>Dedicated to the advancement of decentralized technologies and the positive-sum economies they enable, we formed Senary Commonwealth to aggressively invest in these new systems, in their new economics and in their uncompromising growth.</p><p>Join us in building a better way.</p>',
   cta: [],
-  img: '/ibox/sla-8.svg',
+  img: 'https://i.ibb.co/rxqGJXf/sla8.png',
 }
