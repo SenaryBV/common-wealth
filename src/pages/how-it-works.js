@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
@@ -25,8 +25,19 @@ import {
 import { SH_GROWTH_STRATEGIES } from '../components/SectionHeader/constants'
 import { CC_HOMEPAGE } from '../components/CtaCard/constants'
 import { FAQ } from '../components/Accordion/constants'
+import { graphql, useStaticQuery } from 'gatsby'
 
 const HowItWorks = () => {
+  const query = useStaticQuery(graphql`
+    query MyQuery2 {
+      allDatoCmsFaq {
+        nodes {
+          faqTitle
+          faqContent
+        }
+      }
+    }
+  `)
   return (
     <Layout>
       <SEO title="How it works" />
@@ -48,7 +59,16 @@ const HowItWorks = () => {
         <InfoBox {...INVESTING_FOR_GROWTH} />
       </SiteSection>
       <SiteSection>
-        <Accordion {...FAQ} />
+        {query?.allDatoCmsFaq && (
+          <Accordion
+            title={'FAQS'}
+            data={query.allDatoCmsFaq.nodes.map((item) => {
+              item.header = item.faqTitle
+              item.content = item.faqContent
+              return item
+            })}
+          />
+        )}
       </SiteSection>
       <SiteSection>
         <InfoBox {...IB_SOFTWARE} />

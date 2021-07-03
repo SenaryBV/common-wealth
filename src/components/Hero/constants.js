@@ -44,7 +44,8 @@ export const HERO_GROWTH_STRATEGIES = {
 
 export const HERO_HOW_IT_WORKS = {
   title: 'How it works',
-  descr: 'Our tokenized community invests in the growth of dezentralized technologies',
+  descr:
+    'Members gain exposure to an actively and professionally managed portfolio of early-stage crypto assets. New investments and novel yield strategies are deployed on an ongoing basis to maximize returns. ',
 }
 
 export const HERO_SLA = {

@@ -20,7 +20,9 @@ const NewsFilter = (props) => {
           id
           date
           title
-          image {
+          articleSlug
+          author
+          featureImage {
             url
           }
         }
@@ -28,7 +30,6 @@ const NewsFilter = (props) => {
     }
   `)
 
-  console.log(query.allDatoCmsArticle.nodes)
   // setNewData(query.allDatoCmsArticle.nodes)
 
   // useEffect(() => {

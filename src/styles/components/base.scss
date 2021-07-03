@@ -8,11 +8,18 @@ body {
   font-size: 1.4rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3, h4{
-  font-family: 'Heebo',sans-serif;
+pre {
+  white-space: pre-wrap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Heebo', sans-serif;
 }
 
 // Styled scrollbar

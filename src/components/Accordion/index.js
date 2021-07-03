@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext } from 'react'
 import classNames from 'classnames'
 import { Accordion } from 'react-bootstrap'
 import { useAccordionToggle } from 'react-bootstrap/AccordionToggle'
@@ -21,47 +21,24 @@ function CustomToggle({ children, eventKey, callback }) {
   )
 }
 
-const AccordionExt = ({ title }) => {
-  const [faqs, setFaqs] = useState()
-  useEffect(() => {
-    fetch('https://graphql.datocms.com/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-        Authorization: 'Bearer 18d7ede18f2607bebe88cadb522b0a',
-      },
-      body: JSON.stringify({
-        query: '{ faq { faqTitle faqContent } }',
-      }),
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        setFaqs(res.data)
-      })
-      .catch((error) => {
-        console.log(error)
-      })
-  }, [])
+const AccordionExt = ({ title, data }) => {
   return (
     <div className="accordion">
       <h2 className="accordion__title h2">{title}</h2>
       <div className="accordion__container">
-        {faqs ? (
-          <Accordion>
-            <div className="accordion__section" key="1">
-              <CustomToggle eventKey="1">
-                <div dangerouslySetInnerHTML={{ __html: faqs.faq.faqTitle }}></div>
+        <Accordion>
+          {data.map(({ header, content }) => (
+            <div className="accordion__section" key={header}>
+              <CustomToggle eventKey={header}>
+                <div dangerouslySetInnerHTML={{ __html: header }}></div>
                 <Icon name="chevron-up" size={[17, 10]} />
               </CustomToggle>
-              <Accordion.Collapse className="accordion__collapse" eventKey="1">
-                <div dangerouslySetInnerHTML={{ __html: faqs.faq.faqContent }}></div>
+              <Accordion.Collapse className="accordion__collapse" eventKey={header}>
+                <div dangerouslySetInnerHTML={{ __html: content }}></div>
               </Accordion.Collapse>
             </div>
-          </Accordion>
-        ) : (
-          ''
-        )}
+          ))}
+        </Accordion>
       </div>
     </div>
   )

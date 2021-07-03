@@ -28,8 +28,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
     createNodeField({
       node,
-      name: `id`,
-      value: id,
+      name: `slug`,
+      value: slug,
     })
   }
 }
@@ -43,16 +43,19 @@ exports.createPages = async ({ graphql, actions }) => {
           id
           date
           title
+          articleSlug
+          author
         }
       }
     }
   `)
   data.allDatoCmsArticle.nodes.forEach((node) => {
     actions.createPage({
-      path: '/content/' + node.id,
+      path: '/content/' + node.articleSlug,
       component: path.resolve(`./src/templates/single.js`),
       context: {
         id: node.id,
+        slug: node.articleSlug,
       },
     })
   })

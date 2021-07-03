@@ -14,7 +14,9 @@ const NewsSlider = ({ title, cta, visibleCount, data }) => {
           id
           date
           title
-          image {
+          articleSlug
+          author
+          featureImage {
             url
           }
         }

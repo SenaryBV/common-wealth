@@ -1,6 +1,6 @@
 module.exports = {
   flags: {
-    DEV_SSR: false,
+    DEV_SSR: true,
   },
   siteMetadata: {
     title: 'Commonwealth',
@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: `ba8f3975fa0fdfa9358789899a338a`,
+        apiToken: `18d7ede18f2607bebe88cadb522b0a`,
       },
     },
     // {

@@ -14,6 +14,7 @@ import NewsSlider from '../components/NewsSlider'
 
 // constants
 import { NEWS_SLIDER } from '../components/NewsSlider/constants'
+import { isMobile } from 'react-device-detect'
 
 const single = ({ data }) => {
   return (
@@ -39,11 +40,28 @@ const single = ({ data }) => {
       </SinglePostSection>
       <SinglePostSection style={{ padding: '0px' }}>
         <div className="news-card__img" style={{ height: 'auto' }}>
-          <img src={data.datoCmsArticle.image.url} alt={data.datoCmsArticle.title} />
+          <img src={data.datoCmsArticle.featureImage.url} alt={data.datoCmsArticle.title} />
         </div>
       </SinglePostSection>
       <SinglePostSection>
-        <StructuredText data={data.datoCmsArticle.body.value} />
+        <div
+          style={{
+            maxWidth: isMobile ? '100%' : '736px',
+            display: 'flex',
+            justifyContent: 'center',
+            margin: 'auto',
+            whiteSpace: 'pre-wrap',
+          }}
+        >
+          <div
+            style={{
+              fontWeight: 400,
+              fontSize: '18px',
+              lineHeight: '28px',
+            }}
+            dangerouslySetInnerHTML={{ __html: data.datoCmsArticle.bodyNode.childMarkdownRemark.html }}
+          />
+        </div>
       </SinglePostSection>
       <SinglePostSection>
         <NewsSlider {...NEWS_SLIDER} />
@@ -61,13 +79,14 @@ export const query = graphql`
       title
       author
       date
-      image {
+      featureImage {
         url
       }
-      body {
-        value
+      bodyNode {
+        childMarkdownRemark {
+          html
+        }
       }
-      content
     }
   }
 `
