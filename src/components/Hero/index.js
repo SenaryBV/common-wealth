@@ -2,9 +2,10 @@ import React from 'react'
 import HeroStat from '../HeroStat'
 import { Link } from '@reach/router'
 
-const Hero = ({ title, descr, stats, cta }) => {
+const Hero = ({ title, descr, stats, cta, smallTitle }) => {
   return (
     <div className="hero">
+      {smallTitle ? <p>{smallTitle}</p> : ''}
       <h1 className="hero__title h1">{title}</h1>
       <p className="hero__descr">{descr}</p>
       {stats && (

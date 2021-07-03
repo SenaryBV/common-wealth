@@ -24,9 +24,6 @@ const AboutUs = () => (
       <SectionHeader {...SH_ABOUT_US} />
     </SiteSection>
     <MemberSections members={PC_MEMBERS_ABOUT_US} />
-    <SiteSection modifier="sm">
-      <IconGrid {...IG_OUR_PARTNERS} />
-    </SiteSection>
     <SiteSection modifier="green">
       <InfoBox {...IB_THE_OPPORTUNITY} />
     </SiteSection>

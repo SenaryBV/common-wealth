@@ -17,7 +17,7 @@
         line-height: 1.555;
         letter-spacing: 0.3px;
         margin-bottom: 20px;
-        max-width: 224px;
+        max-width: 100%;
     }
 
     &__about {
@@ -47,6 +47,15 @@
         }
     }
 
+    &__links {
+        margin-top: 10px;
+        width: 100%;
+        a{
+            float: left;
+            margin-right: 5px;
+        }
+    }
+
     &--sm {
         @include media-breakpoint-down(sm) {
             display: flex;
@@ -70,6 +79,7 @@
             font-size: 14px;
         }
 
+
         @include media-breakpoint-down(sm) {
             &__img {
                 width: 220px;
@@ -91,6 +101,8 @@
             &__about {
                 font-size: 12px;
             }
+
+            
         }
 
         @include media-breakpoint-only(sm) {
@@ -158,8 +170,14 @@
             }
 
             &__position,
+            &__about,
             &__name {
                 text-align: center;
+            }
+
+            &__links{
+                display: flex;
+                justify-content: center;
             }
 
             &__position {

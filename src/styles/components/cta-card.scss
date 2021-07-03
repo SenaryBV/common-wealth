@@ -68,12 +68,9 @@
 
     @include media-breakpoint-up(md) {
         display: grid;
-        align-items: flex-start;
-        grid-template-columns: repeat(3, 1fr);
-
-        .cta-card:nth-child(2) {
-            margin-top: 90px;
-        }
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);  
+        margin: 0 150px;      
     }
 
     @include media-breakpoint-only(md) {

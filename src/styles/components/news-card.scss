@@ -1,51 +1,53 @@
 .news-card {
-    display: block;
-    border: 1px solid #e2e5e6;
-    border-radius: 16px;
+  display: block;
+  border: 1px solid #e2e5e6;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+
+  &__img {
     overflow: hidden;
-    position: relative;
+    height: 200px;
 
-    &__img {
-        overflow: hidden;
-        height: 200px;
-
-        img {
-            display: block;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
+  }
 
-    &__info {
-        padding: 16px 24px 20px;
-    }
+  &__info {
+    padding: 16px 24px 20px;
+  }
 
-    &__title {
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 1.45;
-        letter-spacing: 0.3px;
-        margin: 0 0 8px;
-    }
+  &__title {
+    color: #131613;
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+    margin: 0 0 8px;
+    min-height: 64px;
+  }
 
-    .news-label {
-        position: absolute;
-        top: 12px;
-        right: 12px;
-    }
+  .news-label {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
 }
 
 .news-label {
-    display: inline-block;
-    padding: 8px 14px;
-    background: #f6fbf7;
-    border: 1px solid #82b97e;
-    border-radius: 12px;
-    font-size: 12px;
-    line-height: 1;
-    white-space: nowrap;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #82b97e;
+  display: inline-block;
+  padding: 8px 14px;
+  background: #f6fbf7;
+  border: 1px solid #82b97e;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #82b97e;
 }

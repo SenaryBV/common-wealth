@@ -1,10 +1,11 @@
 export const HERO_HOMEPAGE = {
+  smallTitle: 'Senary',
   title: 'Commonwealth',
-  descr: 'A tokenized innovation community leading the global development of Web3',
+  descr: 'The innovation community investing in decentralized, open source, public utilities.',
   stats: [
     {
       value: 1250,
-      name: 'Accredited Members',
+      name: 'Members',
       percents: false,
     },
     {
@@ -43,11 +44,11 @@ export const HERO_GROWTH_STRATEGIES = {
 
 export const HERO_HOW_IT_WORKS = {
   title: 'How it works',
-  descr: 'Our tokenized community invests in the growth of dezentralized technologies',
+  descr:
+    'Members gain exposure to an actively and professionally managed portfolio of early-stage crypto assets. New investments and novel yield strategies are deployed on an ongoing basis to maximize returns. ',
 }
 
 export const HERO_SLA = {
   title: 'Software is a Liquid Asset',
-  descr:
-    'Today we face significant global, social and economic issues; all demanding urgent solutions. Increasingly so, new innovations are required to foster viable solutions. Decentralized technologies represent a new paradigm of coordination technology, and they present us with new possibilities for coordinating collective action.',
+  descr: 'In Web3, Software is a Liquid Asset.',
 }

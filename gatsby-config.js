@@ -31,6 +31,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
+    // `gatsby-source-graphql`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        footnotes: true,
+      },
+    },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
@@ -56,6 +63,13 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: `18d7ede18f2607bebe88cadb522b0a`,
       },
     },
     // {

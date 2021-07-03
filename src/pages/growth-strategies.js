@@ -17,9 +17,9 @@ const GrowthStrategies = () => (
     <SiteSection>
       <Hero {...HERO_GROWTH_STRATEGIES} />
     </SiteSection>
-    {[IB_CAPITAL_INVESTMENTS, IB_TRADING, IB_LABS_DAO, IB_HOW_IT_WORKS].map((props, index) => (
-      <SiteSection>
-        <InfoBox {...props} modifier={index % 2 && 'reverse'} />
+    {[IB_CAPITAL_INVESTMENTS, IB_TRADING, IB_HOW_IT_WORKS].map((props, index) => (
+      <SiteSection key={index}>
+        <InfoBox {...props} modifier={index} />
       </SiteSection>
     ))}
   </Layout>

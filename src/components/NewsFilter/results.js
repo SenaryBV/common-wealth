@@ -4,8 +4,8 @@ import NewsCard from '../NewsCard'
 const FilterResults = ({ data }) => {
   return data.length > 0 ? (
     <div className="news-filter__results news-grid">
-      {data.map((props) => (
-        <NewsCard key={props.id} {...props} />
+      {data.map((article, index) => (
+        <NewsCard key={index} article={article} />
       ))}
     </div>
   ) : (
