@@ -2,7 +2,7 @@ export const CC_HOMEPAGE = [
   {
     modifier: 'trading',
     title: 'Trading',
-    descr: 'Manages a liquid book of cryptoassets using propietary high-frequency trading technology.',
+    descr: 'DeFi-native trading practice employs dedicated strategies to maxamize yeild on freely traded digital assets. ',
     cta: {
       to: '/',
     },
@@ -10,7 +10,7 @@ export const CC_HOMEPAGE = [
   {
     modifier: 'capital',
     title: 'Capital',
-    descr: 'Supports leading innovators and incubates new technology to catalyze growth and adoption of Web3.',
+    descr: 'Supports leading innovators propelling Web3 growth and adoption at pre-launch and public stages of development.',
     cta: {
       to: '/',
     },

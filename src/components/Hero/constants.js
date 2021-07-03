@@ -1,7 +1,7 @@
 export const HERO_HOMEPAGE = {
   smallTitle: 'Senary',
   title: 'Commonwealth',
-  descr: 'The innovation community investing in decentralized, open source, public utilities.',
+  descr: 'The innovation community investing in decentralized technology revolutionizing human coordination.',
   stats: [
     {
       value: 1250,
