@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import HeroStat from '../HeroStat'
 import { Link } from '@reach/router'
 
-const Hero = ({ title, descr, stats, cta, smallTitle }) => {
+const Hero = ({ title, descr, cta, smallTitle }) => {
+  const [stats, setStats] = useState(null)
+
+  useEffect(() => {
+    fetch('https://2oynjxpwi5.execute-api.us-east-2.amazonaws.com/prod/landing')
+      .then((data) => data.json())
+      .then((result) => setStats(result))
+  }, [])
+  console.log(stats)
+
   return (
     <div className="hero">
       {smallTitle ? <p>{smallTitle}</p> : ''}

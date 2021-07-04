@@ -4,17 +4,17 @@ export const HERO_HOMEPAGE = {
   descr: 'The innovation community investing in decentralized, open source, public utilities.',
   stats: [
     {
-      value: 1250,
+      value: 0,
       name: 'Members',
       percents: false,
     },
     {
-      value: 1.25,
+      value: 0,
       name: 'Common price',
       percents: true,
     },
     {
-      value: 125,
+      value: 0,
       name: 'Community AUM',
       percents: true,
     },
