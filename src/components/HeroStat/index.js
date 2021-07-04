@@ -5,7 +5,7 @@ const HeroStat = ({ value, name, percents }) => {
     <div className="hero-stat">
       <div className="hero-stat__value">
         {value}
-        {percents && <div className="hero-stat__percents">+x%</div>}
+        {percents && <div className="hero-stat__percents">+{percents}%</div>}
       </div>
       <div className="hero-stat__name">{name}</div>
     </div>
