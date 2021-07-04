@@ -4,7 +4,13 @@ import { Link } from 'gatsby'
 
 const MemberPortal = () => {
   return (
-    <Button size="sm" variant="outline-primary" as={Link} to="/">
+    <Button
+      size="sm"
+      variant="outline-primary"
+      as={Link}
+      to="https://commonwealth.senary.xyz/#/members"
+      target="_blank"
+    >
       Member Portal
     </Button>
   )

@@ -7,7 +7,9 @@ const NewsPreview = ({ src, label, date, author, title, descr, cta }) => {
   return (
     <div className="news-preview">
       <div className="news-preview__img">
-        <img src={src} alt={title} />
+        <a href={cta.attr.to}>
+          <img src={src} alt={title} />
+        </a>
       </div>
       <div className="news-preview__main">
         <div className="news-preview__label">
