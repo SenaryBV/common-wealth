@@ -1,108 +1,108 @@
 .member-wrapper {
+  &__descr {
+    color: $gray-900;
+    margin: 0 0 28px;
+  }
+
+  &__members {
+    .member-card:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__intro {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include media-breakpoint-only(sm) {
+    &__intro {
+      margin-bottom: 80px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
     &__descr {
-        color: $gray-900;
-        margin: 0 0 28px;
+      font-size: 16px;
+    }
+
+    &__intro {
+      text-align: center;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__intro {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        background-image: url('../assets/img/info-wrapper.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        pointer-events: none;
+        z-index: -1;
+      }
+    }
+  }
+
+  @include media-breakpoint-only(md) {
+    &__intro {
+      padding-left: 252px;
+      padding-bottom: 105px;
+
+      &::after {
+        height: 407px;
+        width: 525px;
+        right: 470px;
+        top: -78px;
+      }
+    }
+  }
+
+  @include media-breakpoint-only(lg) {
+    &__intro {
+      width: 460px;
+      padding-bottom: 500px;
+
+      &::after {
+        height: 512px;
+        bottom: -20px;
+      }
     }
 
     &__members {
-        .member-card:not(:last-child) {
-            margin-bottom: 40px;
-        }
+      width: calc(100% - 500px);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    justify-content: space-between;
+
+    &__intro {
+      &::after {
+        width: 660px;
+        right: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &__intro {
+      width: 480px;
+      padding-bottom: 400px;
+
+      &::after {
+        height: 482px;
+        bottom: -80px;
+      }
     }
 
-    @include media-breakpoint-down(sm) {
-        &__intro {
-            margin-bottom: 40px;
-        }
+    &__members {
+      width: calc(100% - 530px);
     }
-
-    @include media-breakpoint-only(sm) {
-        &__intro {
-            margin-bottom: 80px;
-        }
-    }
-
-    @include media-breakpoint-down(md) {
-        &__descr {
-            font-size: 16px;
-        }
-
-        &__intro {
-            text-align: center;
-        }
-    }
-
-    @include media-breakpoint-up(md) {
-        &__intro {
-            position: relative;
-
-            &:after {
-                content: '';
-                position: absolute;
-                background-image: url('../assets/img/info-wrapper.png');
-                background-repeat: no-repeat;
-                background-size: contain;
-                pointer-events: none;
-                z-index: -1;
-            }
-        }
-    }
-
-    @include media-breakpoint-only(md) {
-        &__intro {
-            padding-left: 252px;
-            padding-bottom: 105px;
-
-            &::after {
-                height: 407px;
-                width: 525px;
-                right: 470px;
-                top: -78px;
-            }
-        }
-    }
-
-    @include media-breakpoint-only(lg) {
-        &__intro {
-            width: 460px;
-            padding-bottom: 500px;
-
-            &::after {
-                height: 512px;
-                bottom: -20px;
-            }
-        }
-
-        &__members {
-            width: calc(100% - 500px);
-        }
-    }
-
-    @include media-breakpoint-up(lg) {
-        display: flex;
-        justify-content: space-between;
-
-        &__intro {
-            &::after {
-                width: 660px;
-                right: 0;
-            }
-        }
-    }
-
-    @include media-breakpoint-up(xl) {
-        &__intro {
-            width: 480px;
-            padding-bottom: 400px;
-
-            &::after {
-                height: 482px;
-                bottom: -80px;
-            }
-        }
-
-        &__members {
-            width: calc(100% - 530px);
-        }
-    }
+  }
 }

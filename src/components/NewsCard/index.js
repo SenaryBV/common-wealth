@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from '@reach/router'
 import NewsData from './newsData'
 
-function truncate(source, size) {
+export function truncate(source, size) {
   return source.length > size ? source.slice(0, size - 1) + '…' : source
 }
 

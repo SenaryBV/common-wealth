@@ -39,6 +39,7 @@ export const HERO_HOMEPAGE = {
 
 export const HERO_GROWTH_STRATEGIES = {
   ...HERO_HOMEPAGE,
+  smallTitle: null,
   title: 'Growth Strategies',
 }
 

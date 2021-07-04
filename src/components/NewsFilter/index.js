@@ -87,7 +87,7 @@ const NewsFilter = (props) => {
           />
         </div>
       </div>
-      <FilterResults data={query.allDatoCmsArticle.nodes} />
+      <FilterResults data={query.allDatoCmsArticle.nodes.slice(1)} />
     </div>
   )
 }
