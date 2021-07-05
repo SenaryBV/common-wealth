@@ -23,14 +23,14 @@ const GrowthStrategies = () => {
     ? [
         { value: allStats.members, name: 'Members', percents: false },
         {
-          value: Math.round(100 * allStats.price.current) / 100,
+          value: `$${(Math.round(100 * allStats.price.current) / 100).toLocaleString()}`,
           name: 'Common price',
           percents: Math.round(((allStats.price.current - allStats.price.start) / allStats.price.start) * 100.0),
         },
         {
-          value: Math.round(100 * allStats.aum.current) / 100,
+          value: `$${(allStats.aum.current / 1000000).toFixed(1)}M`,
           name: 'Community AUM',
-          percents: Math.round(((allStats.aum.current - allStats.aum.start) / allStats.aum.start) * 100.0),
+          percents: false,
         },
       ]
     : null

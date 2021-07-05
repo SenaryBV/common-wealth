@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 //import { StaticImage } from 'gatsby-plugin-image'
 // https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/
 
@@ -25,6 +25,28 @@ import { PC_MEMBERS_INFO, PC_MEMBERS_HOMEPAGE } from '../components/MemberCard/c
 import { NEWS_SLIDER } from '../components/NewsSlider/constants'
 
 const IndexPage = () => {
+  const [allStats, setAllStats] = useState(null)
+  useEffect(() => {
+    fetch('https://2oynjxpwi5.execute-api.us-east-2.amazonaws.com/prod/landing')
+      .then((data) => data.json())
+      .then((result) => setAllStats(result))
+  }, [])
+
+  HERO_HOMEPAGE.stats = allStats
+    ? [
+        { value: allStats.members, name: 'Members', percents: false },
+        {
+          value: `$${(Math.round(100 * allStats.price.current) / 100).toLocaleString()}`,
+          name: 'Common price',
+          percents: Math.round(((allStats.price.current - allStats.price.start) / allStats.price.start) * 100.0),
+        },
+        {
+          value: `$${(allStats.aum.current / 1000000).toFixed(1)}M`,
+          name: 'Community AUM',
+          percents: false,
+        },
+      ]
+    : null
   return (
     <Layout>
       <SEO title="Home" />

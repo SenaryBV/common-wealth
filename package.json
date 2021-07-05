@@ -6,6 +6,7 @@
   "author": "salexpro <dev@salex.pro>",
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
+    "babel-preset-gatsby": "^1.8.0",
     "bootstrap": "^5.0.0-beta3",
     "classnames": "^2.3.1",
     "gatsby": "^3.2.1",
@@ -31,9 +32,11 @@
     "react-datocms": "^1.6.3",
     "react-device-detect": "^1.17.0",
     "react-dom": "^17.0.1",
+    "react-fade-in": "^2.0.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-responsive": "^8.2.0",
+    "react-typeform-embed": "^0.2.1",
     "sass": "^1.32.8"
   },
   "devDependencies": {

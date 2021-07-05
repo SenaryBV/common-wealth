@@ -42,6 +42,10 @@ export const FOOTER_NAV = [
     name: 'About us',
     link: '/about-us/',
   },
+  {
+    name: 'Contact',
+    link: null,
+  },
 ]
 
 export const FOOTER_COPY = [
