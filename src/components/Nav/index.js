@@ -13,15 +13,15 @@ const Nav = ({ nav, modifier }) => {
 
   return (
     <ul className={classNames('site-nav', modifier && `site-nav--${modifier}`)}>
+      <ReactTypeformEmbed
+        popup
+        url="https://form.typeform.com/to/EjBWyJwr?typeform-medium=embed-snippet"
+        ref={(tf) => (typeform = tf)}
+      />
       {nav.map(({ name, link }) => (
         <li key={name} className="site-nav__item">
           {name === 'Contact' ? (
             <div className="site-nav__link" style={{ cursor: 'pointer' }} onClick={onRequestEarly}>
-              <ReactTypeformEmbed
-                popup
-                url="https://form.typeform.com/to/EjBWyJwr?typeform-medium=embed-snippet"
-                ref={(tf) => (typeform = tf)}
-              />
               {name}
             </div>
           ) : (
