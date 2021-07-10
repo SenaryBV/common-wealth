@@ -2,7 +2,7 @@ export const SH_GROWTH_STRATEGIES = {
   hero: false,
   title: 'Growth Strategies',
   descr:
-    '<p>Senary Commonwealth is a continuous investment fund offering a curated portfolio of cryptoassets that represent foundational utilities for the next generation web. . Two strategies work together to position investors for success:</p>',
+    '<p>Senary Commonwealth is a continuous investment fund offering a curated portfolio of cryptoassets that represent foundational utilities for the next generation web. Two strategies work together to position investors for success:</p>',
 }
 
 export const SH_ABOUT_US = {

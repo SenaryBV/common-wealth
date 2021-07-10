@@ -61,7 +61,7 @@ export const INVESTING_FOR_GROWTH = {
   modifier: null,
   title: 'Investing for growth',
   descr:
-    'We support early-stage protocols and applications building open and decentralized infrastructure for global finance, media, creative work, future-of-work and collective action. Our investments are rigorously vetted and made either as direct investments into openly traded digital assets or via agreements for (often discounted) future token equity.',
+    '<p>We support early-stage protocols and applications building open and decentralized infrastructure for global finance, media, creative work, future-of-work and collective action.</p><p>Our investments are rigorously vetted and made either as direct investments into openly traded digital assets or via agreements for (often discounted) future token equity.</p>',
   cta: [
     {
       name: 'Apply for funding',
@@ -136,7 +136,7 @@ export const IB_MEMBER_PORTAL = {
   modifier: null,
   title: 'Private Member Portal',
   descr:
-    '·Proprietary Member Portal: token-permissioned, interactive application granting investors insight into pre-launch and public holdings with real- time pricing detail, fund metrics and discussion of activities.',
+    'Proprietary Member Portal: token-permissioned, interactive application granting investors insight into pre-launch and public holdings with real- time pricing detail, fund metrics and discussion of activities.',
   cta: [],
   img: '/ibox/member-portal.svg',
 }
